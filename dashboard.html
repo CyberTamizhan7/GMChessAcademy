@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Dashboard - GM Chess Academy</title>
+
+  <link rel="stylesheet" href="dashboard.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<!-- Sidebar -->
+<div id="sidebar-container"></div>
+
+<!-- Main Content -->
+<div class="main-content">
+
+  <h1>Dashboard</h1>
+
+  <p class="subtitle">
+    Welcome to GM Chess Academy ♟
+  </p>
+
+  <!-- Dashboard Cards -->
+  <div class="cards">
+
+    <div class="card">
+      <div class="icon">
+        <i class="fa-solid fa-users"></i>
+      </div>
+
+      <h2 class="count" data-target="100">0</h2>
+
+      <p>Players</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+        <i class="fa-solid fa-chalkboard-user"></i>
+      </div>
+
+      <h2 class="count" data-target="2">0</h2>
+
+      <p>Coaches</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+        <i class="fa-solid fa-puzzle-piece"></i>
+      </div>
+
+      <h2 class="count" data-target="58">0</h2>
+
+      <p>Puzzle Races</p>
+    </div>
+
+    <div class="card">
+      <div class="icon">
+        <i class="fa-solid fa-trophy"></i>
+      </div>
+
+      <h2 class="count" data-target="48">0</h2>
+
+      <p>Online Tournaments</p>
+    </div>
+
+  </div>
+
+</div>
+
+<script src="dashboard.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>

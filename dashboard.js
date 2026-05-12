@@ -2,7 +2,7 @@ window.addEventListener("load", () => {
 
   const counters = document.querySelectorAll(".count");
 
-  const duration = 2000; // 2 seconds
+  const duration = 2000;
 
   counters.forEach((el) => {
 
@@ -15,7 +15,6 @@ window.addEventListener("load", () => {
       if (!startTime) startTime = timestamp;
 
       const progress = timestamp - startTime;
-
       const percent = Math.min(progress / duration, 1);
 
       const value = Math.floor(percent * target);
@@ -25,7 +24,7 @@ window.addEventListener("load", () => {
       if (percent < 1) {
         requestAnimationFrame(animate);
       } else {
-        el.innerText = target; // ensure final value
+        el.innerText = target;
       }
 
     }

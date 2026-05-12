@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Puzzle Race Leaderboard</title>
+
+  <link rel="stylesheet" href="puzzle_race.css">
+  <link rel="stylesheet" href="components/sidebar.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div id="sidebar-container"></div>
+
+<div class="main-content">
+
+  <h1>Puzzle Race Leaderboard</h1>
+
+  <p class="subtitle">
+    Weekly Ranking Based on Total Performance ♟
+  </p>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th data-key="sno">SNo</th>
+          <th data-key="name">Name</th>
+          <th data-key="total">Total Score</th>
+          <th data-key="attended">Races Attended</th>
+          <th data-key="average">Average Score</th>
+        </tr>
+      </thead>
+
+      <tbody id="leaderboard-body">
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<script src="app.js"></script>
+<script src="puzzle_race_data.js"></script>
+<script src="puzzle_race.js"></script>
+
+</body>
+</html>

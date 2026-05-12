@@ -1,0 +1,61 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Sidebar */
+.sidebar {
+  width: 260px;
+  height: 100vh;
+  background-color: #111827;
+  position: fixed;
+  left: 0;
+  top: 0;
+  padding: 20px;
+  border-right: 1px solid #1f2937;
+}
+
+/* Logo */
+.logo {
+  font-size: 24px;
+  font-weight: bold;
+  color: #facc15;
+  margin-bottom: 40px;
+}
+
+/* Menu */
+.menu {
+  list-style: none;
+}
+
+.menu li {
+  margin-bottom: 15px;
+}
+
+/* Links */
+.menu a {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+
+  text-decoration: none;
+  color: white;
+
+  padding: 14px 16px;
+  border-radius: 10px;
+
+  transition: 0.3s;
+}
+
+/* Hover */
+.menu a:hover {
+  background-color: #1e293b;
+  transform: translateX(5px);
+  color: #facc15;
+}
+
+/* Icons */
+.menu i {
+  font-size: 18px;
+}
