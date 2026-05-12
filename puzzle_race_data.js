@@ -378,7 +378,7 @@ window.race48 = {
   round_1: { "Nithin B": 46, "Devin R J": 30, "Muthish E G": 8 },
   round_2: { "Nithin B": 43, "Devin R J": 35, "Muthish E G": 16 },
   round_3: { "Nithin B": 65, "Devin R J": 33, "Naresh A": 25, "Muthish E G": 9 },
-  round_4: { "Nithin B": 57, "Devin R J": 25, "Naresh A": 13, "Muthish E G": 6, "Sanjeev K S": 3, "Michael A": 2 },
+  round_4: { "Nithin B": 57, "Devin R J": 25, "Naresh A": 13, "Muthish E G": 6, "Sanjeev K S": 3, "Michael George Antony A": 2 },
   round_5: { "Nithin B": 47, "Devin R J": 30, "Muthish E G": 11, "Naresh A": 11, "Sanjeev K S": 6, "Unknown (Freshjocundpianist)": 7 }
 };
 

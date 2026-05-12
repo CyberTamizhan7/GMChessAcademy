@@ -14,6 +14,8 @@
   top: 0;
   padding: 20px;
   border-right: 1px solid #1f2937;
+  transition: 0.3s ease;
+  z-index: 1000;
 }
 
 /* Logo */
@@ -22,6 +24,12 @@
   font-weight: bold;
   color: #facc15;
   margin-bottom: 40px;
+  cursor: pointer;
+  transition: 0.4s ease;
+}
+
+.logo:hover {
+  letter-spacing: 3px;
 }
 
 /* Menu */
@@ -58,4 +66,58 @@
 /* Icons */
 .menu i {
   font-size: 18px;
+}
+
+/* Toggle Button */
+.menu-toggle {
+  display: none;
+
+  position: fixed;
+  top: 15px;
+  left: 15px;
+
+  background: #111827;
+  color: white;
+
+  border: none;
+  padding: 12px 15px;
+  border-radius: 8px;
+
+  font-size: 20px;
+  cursor: pointer;
+
+  z-index: 1100;
+}
+
+/* Mobile View */
+@media (max-width: 768px) {
+
+  body {
+    overflow-x: hidden;
+  }
+
+  .main-content {
+    margin-left: 0;
+    padding-top: 70px;
+  }
+
+  .menu-toggle {
+    display: block;
+    z-index: 99999;
+  }
+
+  .sidebar {
+    padding-top: 70px;
+    left: 0;
+    transform: translateX(-100%);
+  }
+
+  .sidebar.active {
+    transform: translateX(0);
+    box-shadow: 0 0 15px rgba(0,0,0,0.5);
+  }
+
+  .menu-toggle i {
+    pointer-events: none;
+  }
 }

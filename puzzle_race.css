@@ -36,11 +36,10 @@ table {
 thead th {
   position: sticky;
   top: 0;
-  z-index: 1000;
   background: linear-gradient(180deg, #111c2e, #0b1220);
   color: #fbbf24;
   text-transform: uppercase;
-  font-size: 16px;
+  font-size: 15px;
   letter-spacing: 1px;
   padding: 16px;
   border-bottom: 1px solid #1f2a3a;
@@ -101,4 +100,35 @@ tbody tr:nth-child(even) td {
 
 .table-container::-webkit-scrollbar-thumb:hover {
   background: #475569;
+}
+
+@media (max-width: 768px) {
+
+  .main-content {
+    margin-left: 0;
+    width: 100%;
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 24px;
+  }
+
+  .subtitle {
+    font-size: 14px;
+  }
+
+  table {
+    font-size: 12px;
+    min-width: 600px;
+  }
+
+  .table-container {
+    overflow-x: auto;
+  }
+
+  th, td {
+    padding: 10px;
+  }
+
 }
