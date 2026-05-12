@@ -83,8 +83,8 @@ function buildLeaderboard(races) {
 
 function getSafeRange() {
 
-  let start = parseInt(document.getElementById("startRace").value);
-  let end = parseInt(document.getElementById("endRace").value);
+  let start = parseInt(document.getElementById("startRace")?.value || 1);
+  let end = parseInt(document.getElementById("endRace")?.value || MAX_RACE);
 
   if (isNaN(start)) start = 1;
   if (isNaN(end)) end = MAX_RACE;
@@ -107,9 +107,13 @@ function updateLeaderboard(start = 1, end = MAX_RACE, search = "") {
   const races = getRaces(start, end);
   let leaderboard = buildLeaderboard(races);
 
-  if (search) {
+  // Use passed search parameter or get from input
+  const searchInput = document.getElementById("searchName");
+  const actualSearch = search || (searchInput ? searchInput.value : "");
+
+  if (actualSearch) {
     leaderboard = leaderboard.filter(p =>
-      p.name.toLowerCase().includes(search.toLowerCase())
+      p.name.toLowerCase().includes(actualSearch.toLowerCase())
     );
   }
 
@@ -124,6 +128,11 @@ function updateLeaderboard(start = 1, end = MAX_RACE, search = "") {
 function renderTable(data) {
 
   const tbody = document.getElementById("leaderboard-body");
+  if (!tbody) {
+    console.error("leaderboard-body element not found!");
+    return;
+  }
+  
   tbody.innerHTML = "";
 
   data.forEach((p, index) => {
@@ -168,25 +177,29 @@ function renderTable(data) {
 
 let sortDirection = {};
 
-document.querySelectorAll("thead th").forEach(th => {
+function initializeSorting() {
+  document.querySelectorAll("thead th").forEach(th => {
 
-  th.style.cursor = "pointer";
+    th.style.cursor = "pointer";
 
-  th.addEventListener("click", () => {
+    th.addEventListener("click", () => {
 
-    const key = th.dataset.key;
-    if (!key) return;
+      const key = th.dataset.key;
+      if (!key) return;
 
-    sortDirection[key] = !sortDirection[key];
+      sortDirection[key] = !sortDirection[key];
 
-    sortTable(key, sortDirection[key]);
+      sortTable(key, sortDirection[key]);
+    });
+
   });
-
-});
+}
 
 function sortTable(key, asc = true) {
 
   const tbody = document.getElementById("leaderboard-body");
+  if (!tbody) return;
+  
   const rows = Array.from(tbody.querySelectorAll("tr"));
 
   rows.sort((a, b) => {
@@ -231,47 +244,53 @@ function sortTable(key, asc = true) {
 
 
 /* =========================
-   8. EVENTS
+   8. EVENTS & INITIALIZATION
 ========================= */
 
-// enter key
-document.addEventListener("keydown", (e) => {
-  if (e.key === "Enter") {
-    const { start, end } = getSafeRange();
-    const search = document.getElementById("searchName").value;
-    updateLeaderboard(start, end, search);
-  }
-});
+document.addEventListener("DOMContentLoaded", () => {
 
-// live input update
-document.querySelectorAll("#startRace, #endRace, #searchName")
-  .forEach(el => {
-    el.addEventListener("input", () => {
+  console.log("DOM loaded - initializing puzzle race...");
 
+  // Initialize sorting
+  initializeSorting();
+
+  // enter key
+  document.addEventListener("keydown", (e) => {
+    if (e.key === "Enter") {
       const { start, end } = getSafeRange();
-      const search = document.getElementById("searchName").value;
-
+      const search = document.getElementById("searchName")?.value || "";
       updateLeaderboard(start, end, search);
-
-    });
+    }
   });
 
-// enforce limits visually
-document.querySelectorAll("#startRace, #endRace")
-  .forEach(el => {
+  // live input update
+  const inputElements = document.querySelectorAll("#startRace, #endRace, #searchName");
+  console.log("Found input elements:", inputElements.length);
+  
+  inputElements.forEach(el => {
     el.addEventListener("input", () => {
-
-      let { start, end } = getSafeRange();
-
-      document.getElementById("startRace").value = start;
-      document.getElementById("endRace").value = end;
-
+      const { start, end } = getSafeRange();
+      const search = document.getElementById("searchName")?.value || "";
+      updateLeaderboard(start, end, search);
     });
   });
 
+  // enforce limits visually
+  document.querySelectorAll("#startRace, #endRace")
+    .forEach(el => {
+      el.addEventListener("input", () => {
+        let { start, end } = getSafeRange();
+        const startInput = document.getElementById("startRace");
+        const endInput = document.getElementById("endRace");
+        
+        if (startInput) startInput.value = start;
+        if (endInput) endInput.value = end;
+      });
+    });
 
-/* =========================
-   9. INIT
-========================= */
+  // Initial render
+  updateLeaderboard(1, MAX_RACE, "");
+  
+  console.log("Puzzle race initialized successfully!");
 
-updateLeaderboard(1, MAX_RACE, "");
+});
