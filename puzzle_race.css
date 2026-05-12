@@ -52,7 +52,7 @@ tr.bronze td:first-child {
   margin-left: 240px;
   padding: 30px;
   width: 100%;
-  animation: slideDown 0.2s ease-out;
+  animation: slideDown 0.4s ease-out;
 }
 
 h1 {
@@ -88,6 +88,7 @@ table {
   }
 }
 
+/* FIXED: Sticky header with proper z-index */
 thead th {
   position: sticky;
   top: 0;
@@ -100,6 +101,7 @@ thead th {
   border-bottom: 1px solid #1f2a3a;
   box-shadow: 0 2px 10px rgba(0,0,0,0.4);
   transition: 0.3s ease;
+  z-index: 10; /* ADDED: Keeps header above scrolling content */
 }
 
 table th:hover{
@@ -122,6 +124,7 @@ td {
   padding: 14px;
   color: #e5e7eb;
   border-bottom: 1px solid #1f2a3a;
+  background: #0b1220; /* ADDED: Ensures solid background */
 }
 
 tr:hover td {
@@ -132,12 +135,15 @@ tbody tr:nth-child(even) td {
   background: rgba(255,255,255,0.02);
 }
 
+/* FIXED: Table container for proper scrolling */
 .table-container {
   max-height: 70vh;
   overflow-y: auto;
+  overflow-x: auto; /* ADDED: Horizontal scroll if needed */
   border-radius: 14px;
   scrollbar-width: thin;
   scrollbar-color: #334155 #0f172a;
+  position: relative; /* ADDED: Creates positioning context */
 }
 
 .table-container::-webkit-scrollbar {
