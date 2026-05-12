@@ -6,11 +6,53 @@ body {
   display: flex;
 }
 
+.controls {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 20px;
+  flex-wrap: wrap;
+}
+
+.controls input {
+  padding: 10px;
+  border-radius: 8px;
+  border: none;
+  outline: none;
+}
+
+.controls button {
+  padding: 10px 16px;
+  border: none;
+  border-radius: 8px;
+  background: #fbbf24;
+  cursor: pointer;
+  font-weight: bold;
+} 
+
+
+/* Top 3 Highlighting */
+tr.gold td:first-child {
+  color: gold;
+  text-shadow: 0 0 8px gold;
+}
+
+tr.silver td:first-child {
+  color: silver;
+  text-shadow: 0 0 6px silver;
+}
+
+tr.bronze td:first-child {
+  color: #cd7f32;
+  text-shadow: 0 0 6px #cd7f32;
+}
+
+
 /* Sidebar already loaded externally */
 .main-content {
   margin-left: 240px;
   padding: 30px;
   width: 100%;
+  animation: slideDown 0.2s ease-out;
 }
 
 h1 {
@@ -31,6 +73,19 @@ table {
   overflow: hidden;
   box-shadow: 0 10px 30px rgba(0,0,0,0.35);
   position: relative;
+  animation: slideDown 0.8s ease-out;
+}
+
+@keyframes slideDown {
+  from {
+    opacity: 0;
+    transform: translateY(-50px);
+  }
+
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
 }
 
 thead th {
@@ -78,7 +133,7 @@ tbody tr:nth-child(even) td {
 }
 
 .table-container {
-  max-height: 80vh;
+  max-height: 70vh;
   overflow-y: auto;
   border-radius: 14px;
   scrollbar-width: thin;
