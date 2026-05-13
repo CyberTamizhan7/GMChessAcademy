@@ -1,6 +1,7 @@
 * {
   margin: 0;
   padding: 0;
+  font-family: Arial;
   box-sizing: border-box;
 }
 
@@ -25,6 +26,8 @@
   color: #facc15;
   margin-bottom: 40px;
   cursor: pointer;
+  padding-left: 10px;
+  padding-top: 10px;
   transition: 0.4s ease;
 }
 
@@ -46,13 +49,12 @@
   display: flex;
   align-items: center;
   gap: 12px;
-
   text-decoration: none;
   color: white;
-
   padding: 14px 16px;
   border-radius: 10px;
-
+  font-weight: 1;
+  letter-spacing: 2px;
   transition: 0.3s;
 }
 
