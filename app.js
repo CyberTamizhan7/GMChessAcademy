@@ -6,21 +6,44 @@ document.addEventListener("DOMContentLoaded", () => {
 
       document.getElementById("sidebar-container").innerHTML = data;
 
-      // ✅ NOW sidebar exists in DOM
       const menuToggle = document.getElementById("menuToggle");
-      const sidebar = document.getElementById("sidebar");
+      const sidebar    = document.getElementById("sidebar");
+      const overlay    = document.getElementById("overlay");
 
-      console.log("Sidebar injected");
-      console.log(menuToggle, sidebar);
+      if (!menuToggle || !sidebar || !overlay) return;
 
-      if (menuToggle && sidebar) {
-        menuToggle.addEventListener("click", () => {
-          console.log("Toggle clicked");
-          sidebar.classList.toggle("active");
-        });
+      function openSidebar() {
+        sidebar.classList.add("active");
+        overlay.classList.add("active");
       }
 
+      function closeSidebar() {
+        sidebar.classList.remove("active");
+        overlay.classList.remove("active");
+      }
+
+      function toggleSidebar() {
+        sidebar.classList.contains("active") ? closeSidebar() : openSidebar();
+      }
+
+      // Toggle button
+      menuToggle.addEventListener("click", (e) => {
+        e.stopPropagation();
+        toggleSidebar();
+      });
+
+      // ✅ Overlay click closes sidebar
+      overlay.addEventListener("click", closeSidebar);
+
+      // Prevent clicks inside sidebar from bubbling to overlay
+      sidebar.addEventListener("click", (e) => e.stopPropagation());
+
+      // Close when a menu link is clicked
+      document.querySelectorAll(".menu a").forEach(link => {
+        link.addEventListener("click", closeSidebar);
+      });
+
     })
-    .catch(err => console.log("Sidebar load error:", err));
+    .catch(err => console.error("Sidebar load error:", err));
 
 });

@@ -52,27 +52,9 @@
 
   </div>
 
-<script>
-document.addEventListener("DOMContentLoaded", () => {
+  <div id="overlay"></div>
 
-  const menuToggle = document.getElementById("menuToggle");
-  const sidebar = document.getElementById("sidebar");
-
-  console.log("JS loaded");
-  console.log(menuToggle, sidebar);
-
-  if (!menuToggle || !sidebar) {
-    console.log("Elements not found");
-    return;
-  }
-
-  menuToggle.addEventListener("click", () => {
-    console.log("Toggle clicked");
-    sidebar.classList.toggle("active");
-  });
-
-});
-</script>
+<script src="components/sidebar.js"></script>
 
 </body>
 </html>

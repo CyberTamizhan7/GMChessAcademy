@@ -123,3 +123,29 @@
     pointer-events: none;
   }
 }
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  background: rgba(0,0,0,0.5);
+
+  opacity: 0;
+  pointer-events: none;
+
+  transition: 0.3s;
+  z-index: 999;
+}
+
+/* when active */
+#overlay.active {
+  opacity: 1;
+  pointer-events: all;
+}
+
+.sidebar {
+  z-index: 1000;
+}
