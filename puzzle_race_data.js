@@ -477,3 +477,11 @@ window.race60 = {
   round_4: { "Nithin B": 46, "Muthish E G": 11, "Supratik R D": 10, "Sree Maha K": 5, "Aaron Prineen A": 1 },
   round_5: { "Nithin B": 60, "Muthish E G": 16, "Supratik R D": 10, "Sree Maha K": 9, "Aaron Prineen A": 1 }
 };
+
+window.race61 = {
+  round_1: { "Ahilesh A": 29, "Devin R J": 27, "Sree Maha K": 12, "Muthish E G": 11 },
+  round_2: { "Christoan R": 19, "Devin R J": 17, "Mukund S N": 12, "Sree Maha K": 12 },
+  round_3: { "Devin R J": 39, "Ahilesh A": 24, "Christoan R": 19, "Muthish E G": 15, "Mukund S N": 8, "Sree Maha K": 6 },
+  round_4: { "Devin R J": 25, "Christoan R": 16, "Ahilesh A": 14, "Sree Maha K": 11, "Mukund S N": 10 },
+  round_5: { "Devin R J": 21, "Christoan R": 18, "Sree Maha K": 16, "Ahilesh A": 9 }
+};

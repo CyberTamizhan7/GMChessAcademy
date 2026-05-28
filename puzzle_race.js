@@ -2,7 +2,7 @@
    1. CONSTANTS / HELPERS
 ========================= */
 
-const MAX_RACE = 60;
+const MAX_RACE = 61;
 
 
 /* =========================
