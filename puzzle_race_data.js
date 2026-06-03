@@ -485,3 +485,11 @@ window.race61 = {
   round_4: { "Devin R J": 25, "Christoan R": 16, "Ahilesh A": 14, "Sree Maha K": 11, "Mukund S N": 10 },
   round_5: { "Devin R J": 21, "Christoan R": 18, "Sree Maha K": 16, "Ahilesh A": 9 }
 };
+
+window.race62 = {
+  round_1: { "Nithin B": 55, "Ananya Rajan P": 28, "Muthish E G": 23, "Sairam R M": 12 },
+  round_2: { "Nithin B": 51, "Ahilesh A": 19, "Muthish E G": 7, "Sairam R M": 7, "Ananya Rajan P": 6 },
+  round_3: { "Nithin B": 58, "Ananya Rajan P": 36, "Ahilesh A": 21, "Sairam R M": 15, "Aaradhya Vaidehi": 5, "Muthish E G": 4 },
+  round_4: { "Nithin B": 63, "Ananya Rajan P": 36, "Sairam R M": 13, "Muthish E G": 12, "Aaradhya Vaidehi": 5 },
+  round_5: { "Nithin B": 63, "Ananya Rajan P": 27, "Muthish E G": 22, "Sairam R M": 10, "Aaradhya Vaidehi": 3, "Ahilesh A": 1 }
+};
