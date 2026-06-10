@@ -493,3 +493,11 @@ window.race62 = {
   round_4: { "Nithin B": 63, "Ananya Rajan P": 36, "Sairam R M": 13, "Muthish E G": 12, "Aaradhya Vaidehi": 5 },
   round_5: { "Nithin B": 63, "Ananya Rajan P": 27, "Muthish E G": 22, "Sairam R M": 10, "Aaradhya Vaidehi": 3, "Ahilesh A": 1 }
 };
+
+window.race63 = {
+  round_1: { "Nithin B": 63, "Devin R J": 26, "Muthish E G": 15, "Ahilesh A": 14, "Sree Maha K": 12, "Unknown (Aquatopssnail)": 3, "Aaron Prineen A": 2 },
+  round_2: { "Nithin B": 53, "Devin R J": 22, "Ahilesh A": 20, "Muthish E G": 17, "Sree Maha K": 10, "Antonin Ransica A K": 3, "Unknown (Aquatopssnail)": 3, "Aaron Prineen A": 2, "Pratyush B": 1 },
+  round_3: { "Nithin B": 49, "Devin R J": 26, "Ahilesh A": 18, "Muthish E G": 10, "Sree Maha K": 8, "Unknown (Aquatopssnail)": 6, "Aaron Prineen A": 2 },
+  round_4: { "Nithin B": 48, "Devin R J": 35, "Muthish E G": 8, "Aaron Prineen A": 2, "Antonin Ransica A K": 1 },
+  round_5: { "Nithin B": 54, "Devin R J": 32, "Ahilesh A": 20, "Muthish E G": 19, "Sree Maha K": 9, "Antonin Ransica A K": 5, "Pratyush B": 2 }
+};
