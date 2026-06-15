@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Homework Leaderboard</title>
+
+  <link rel="stylesheet" href="homework_leaderboard.css">
+  <link rel="stylesheet" href="components/sidebar.css">
+
+  <link rel="stylesheet"
+    href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
+</head>
+
+<body>
+
+<div id="sidebar-container"></div>
+
+<div class="main-content">
+
+  <h1>Homework Leaderboard</h1>
+
+  <p class="subtitle">
+    Weekly Ranking Based on Total Performance ♟
+  </p>
+
+  <div class="controls">
+
+    <input type="text" id="searchName" placeholder="Search student name">
+    <input type="text" id="searchBranch" placeholder="Search branch">
+
+  </div>
+
+  <div class="table-container">
+    <table>
+      <thead>
+        <tr>
+          <th data-key="sno">SNo</th>
+          <th data-key="name">Name</th>
+          <th data-key="total">Total Score</th>
+          <th data-key="branch">Branch</th>
+        </tr>
+      </thead>
+
+      <tbody id="leaderboard-body">
+      </tbody>
+    </table>
+  </div>
+
+</div>
+
+<!-- Script Loading Order: Data first, then logic, then app -->
+<script src="homework_leaderboard_data.js"></script>
+<script src="homework_leaderboard.js"></script>
+<script src="app.js"></script>
+
+</body>
+</html>
