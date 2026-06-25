@@ -2,7 +2,7 @@ const leaderboardData = [
   { name: "Aaradhya Vaidehi", total: 24 , branch: "ISRO" },
   { name: "Akshitha R R", total: 0, branch: "Mylaudy" },
   { name: "Amrit Kinu R R", total: 0 , branch: "Mylaudy" },
-  { name: "Ananya Rajan P", total: 0, branch: "Online" },
+  { name: "Ananya Rajan P", total: 24, branch: "Online" },
   { name: "Anbu Kumar C", total: 0 , branch: "Mylaudy" },
   { name: "Antonin Ransica A K", total: 0, branch: "Mylaudy" },
   { name: "Atul Gupta", total: 0, branch: "ISRO" },
