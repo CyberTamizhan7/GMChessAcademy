@@ -8,7 +8,7 @@ const leaderboardData = [
   { name: "Atul Gupta", total: 0, branch: "ISRO" },
   { name: "Chris Matteo A L", total: 0, branch: "ISRO" },
   { name: "Devin R J", total: 0, branch: "Mylaudy" },
-  { name: "Dhakshan A P", total: 22, branch: "Mylaudy" },
+  { name: "Dhakshan A P", total: 24, branch: "Mylaudy" },
   { name: "Jaden Matteo A L", total: 35, branch: "ISRO" },
   { name: "Karmuhilan S", total: 0, branch: "ISRO" },
   { name: "Mahasree A V", total: 24, branch: "Nagercoil" },
