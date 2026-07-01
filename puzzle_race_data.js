@@ -518,3 +518,11 @@ window.race65 = {
   round_4: { "Ahilesh A": 28, "Sree Maha K": 15, "Nousith Siva J S": 14, "Unknown (Aquatopssnail)": 12, "Radha Krishnan I": 6 },
   round_5: { "Ahilesh A": 33, "Nousith Siva J S": 15, "Sree Maha K": 11, "Radha Krishnan I": 4, "Unknown (Aquatopssnail)": 4 }
 };
+
+window.race66 = {
+  round_1: { "Nousith Siva J S": 13, "Sree Maha K": 11, "Muthish E G": 11, "Aaradhya Vaidehi": 5 },
+  round_2: { "Muthish E G": 25, "Nousith Siva J S": 21, "Sree Maha K": 17, "Aaradhya Vaidehi": 10, "Nainika N K": 7, "Unknown (Aquatopssnail)": 4 },
+  round_3: { "Nousith Siva J S": 25, "Muthish E G": 16, "Unknown (Aquatopssnail)": 10, "Sree Maha K": 8, "Aaradhya Vaidehi": 8, "Nainika N K": 4 },
+  round_4: { "Nousith Siva J S": 12, "Unknown (Aquatopssnail)": 11, "Aaradhya Vaidehi": 9, "Sree Maha K": 8, "Nainika N K": 4 },
+  round_5: { "Sree Maha K": 23, "Nousith Siva J S": 9, "Unknown (Aquatopssnail)": 7, "Nainika N K": 6, "Aaradhya Vaidehi": 4 }
+};
