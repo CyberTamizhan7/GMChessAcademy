@@ -11,7 +11,7 @@ const leaderboardData = [
   { name: "Mahasree A V", total: 24, branch: "Nagercoil" },
   { name: "Muthish E G", total: 39, branch: "Mylaudy" },
   { name: "Nainika N K", total: 24, branch: "Mylaudy" },
-  { name: "Nousith Siva J S", total: 144, branch: "Mylaudy" },
+  { name: "Nousith Siva J S", total: 168, branch: "Mylaudy" },
   { name: "Radha Krishnan I", total: 96, branch: "Nagercoil" },
   { name: "Ragav Krishna N", total: 120, branch: "Nagercoil" },
   { name: "Ramnath Revanth S", total: 40, branch: "Mylaudy" },
