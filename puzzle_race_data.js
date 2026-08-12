@@ -542,3 +542,11 @@ window.race68 = {
   round_4: { "Nithin B": 62, "Devin R J": 44, "Muthish E G": 24, "Nousith Siva J S": 20, "Ragav Krishna N": 17, "Sanjeev K S": 14, "Sree Maha K": 13, "Radha Krishnan I": 4, "Unknown (Wisematuringelephant)": 1 },
   round_5: { "Nithin B": 39, "Devin R J": 23, "Ragav Krishna N": 19, "Muthish E G": 18, "Nousith Siva J S": 15, "Sanjeev K S": 13, "Sree Maha K": 12, "Radha Krishnan I": 10, "Muhilan S T": 3 }
 };
+
+window.race69 = {
+  round_1: { "Nithin B": 63, "Ahilesh A": 31, "Nousith Siva J S": 23, "Muthish E G": 22, "Radha Krishnan I": 12, "Vijay Krishna A N": 9, "Ragav Krishna N": 9, "Magizhlini S": 1 },
+  round_2: { "Nithin B": 70, "Ahilesh A": 25, "Nousith Siva J S": 24, "Muthish E G": 22, "Vijay Krishna A N": 13, "Radha Krishnan I": 8, "Magizhlini S": 1 },
+  round_3: { "Nithin B": 53, "Nousith Siva J S": 30, "Ahilesh A": 29, "Muthish E G": 23, "Vijay Krishna A N": 13, "Mukund S N": 9, "Radha Krishnan I": 8, "Magizhlini S": 5 },
+  round_4: { "Nithin B": 60, "Ahilesh A": 22, "Nousith Siva J S": 15, "Muthish E G": 13, "Ragav Krishna N": 8, "Vijay Krishna A N": 8, "Radha Krishnan I": 8, "Mukund S N": 8, "Magizhlini S": 1 },
+  round_5: { "Nithin B": 61, "Muthish E G": 29, "Nousith Siva J S": 25, "Ragav Krishna N": 11, "Radha Krishnan I": 10, "Mukund S N": 10, "Vijay Krishna A N": 7, "Magizhlini S": 4 }
+};
