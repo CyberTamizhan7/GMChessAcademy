@@ -607,3 +607,11 @@ window.race76 = {
   round_5: { "Nithin B": 69, "Nousith Siva J S": 31, "Muthish E G": 20, "Devin R J": 19, "Kingsly C J": 14, "Sanjeev K S": 12, "Deepa Rishnu D": 11, "Sree Maha K": 9, "Radha Krishnan I": 9, "Ransica A K": 2 }
 };
 
+window.race77 = {
+  round_1: { "Nithin B": 41, "Kingsly C J": 17, "Deepa Rishnu D": 16, "Muthish E G": 16, "Nousith Siva J S": 14, "Sree Maha K": 11},
+  round_2: { "Nithin B": 47, "Nousith Siva J S": 25, "Muthish E G": 20, "Sanjeev K S": 18, "Kingsly C J": 15, "Deepa Rishnu D": 12, "Sree Maha K": 11},
+  round_3: { "Nithin B": 46, "Sanjeev K S": 23, "Muthish E G": 20, "Nousith Siva J S": 18, "Deepa Rishnu D": 14, "Sree Maha K": 11, "Kingsly C J": 10},
+  round_4: { "Nithin B": 56, "Nousith Siva J S": 28, "Muthish E G": 24, "Kingsly C J": 21, "Deepa Rishnu D": 20, "Sree Maha K": 18, "Sanjeev K S": 10},
+  round_5: { "Nithin B": 53, "Nousith Siva J S": 26, "Kingsly C J": 26, "Muthish E G": 25, "Sree Maha K": 18, "Sanjeev K S": 18, "Deepa Rishnu D": 7}
+}
+
